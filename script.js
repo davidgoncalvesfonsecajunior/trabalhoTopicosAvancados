@@ -13,8 +13,6 @@ tabelaCadastro.addEventListener('dblclick',e =>{
 
 const botaoEnviar = document.querySelector('button')
 botaoEnviar.addEventListener('click', ()=>{
-    
-    
     //inserir nome e email
     const campoTabela = document.getElementById('elementosCadastrados')
     const inputNome = document.querySelector('input[name=nome]')
