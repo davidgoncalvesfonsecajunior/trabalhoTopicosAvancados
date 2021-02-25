@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Trabalho 1</title>
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+    </head>
+    <body>
+        <div class="container">
+        <h1>cadastro de pessoas</h1>
+        <br>
+
+        
+            <div class="mb-3">
+                <label for="nome" class="form-label">nome</label>
+                <input type="text" class="form-control" name="nome" required >
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">E-mail</label>
+                <input type="email" class="form-control" name="email" aria-describedby="emailHelp" required>
+                <div id="emailHelp" class="form-text">insira um e-mail valido.</div>
+            </div>
+            
+            
+            <button  class="btn btn-primary">Enviar</button>
+        
+        </div>
+        <br>
+        <hr>
+        <div class="container">
+            <br>
+            <h1>Pessoas cadastradas</h1>
+            <br>
+            <table class="table table-striped">
+                <caption>clicando duas vezes na linha você elimina o cadastro</caption>
+                
+                    <tr>
+                        <th>nome</th>
+                        <th>E-mail</th>
+                    </tr>
+                    <tbody  id="elementosCadastrados">
+                    
+                </tbody>
+            </table>
+        </div>
+
+        <script src="script.js"></script>
+        <!-- Bootstrap Javascript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+    </body>
+</html>
